@@ -3,12 +3,13 @@ import React, { Component } from 'react'
 class Cell extends Component {
     
     state = {
-        color : this.props.val
+        color: this.props.value
     }
     
     handleClick = () =>{
-        this.setState = '#333'
-        //return style = '#333'
+        this.setState({
+            color: '#333'
+        }) 
     }
 
     render() {
